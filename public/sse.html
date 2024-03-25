@@ -6,8 +6,10 @@
     <body>
         <script>
         const source = new EventSource('/events');
-        source.onmessage = function(e) {
-            document.body.innerHTML += e.data + '<br>';
+        source.onmessage = (e) => {
+            const content = document.createElement('div');
+            content.textContent = e.data;
+            document.body.append(content);
         };
         </script>
     </body>
