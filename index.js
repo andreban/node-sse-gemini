@@ -4,7 +4,7 @@ const { VertexAI } = require('@google-cloud/vertexai');
 
 dotenv.config();
 
-const MODEL = 'gemini-pro';
+const MODEL = 'gemini-1.0-pro';
 const PORT = process.env.PORT || 3000;
 const PROJECT_ID = process.env.PROJECT_ID;
 const LOCATION_ID = process.env.LOCATION_ID;
